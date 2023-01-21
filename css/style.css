@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Poor+Story&display=swap");
+*{
+    font-family: "Poor Story", cursive;
+}
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 172, 238,0.3);
+
+}
+/* register*/
+.formdiv input::-webkit-inner-spin-button{
+    display: none;
+  
+}
+.userreg-form{
+    background-color: #3b5998;
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+
+}
+.buttondiv{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+.buttondiv button{
+    font-size: 25px;
+    width: 90px;
+    color: white;
+    border:none;
+    border-radius: 15px;
+    background-color: #00acee;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.buttondiv button:hover{
+    background-color: white;
+    color: #00acee;
+}
+.formdiv input{
+    font-size: 25px;
+    color: #00acee;
+    border-radius: 10px;
+    outline: none;
+    border: 3px solid #3b5998;
+    transition: 0.3s;
+ 
+}
+input:focus{
+    border: 3px solid #00acee;
+}
+
+.success,.error{
+    display: flex;
+    justify-content: center;
+    
+}
+.success h2,.error h2{
+    position: absolute;
+}
+.userreg{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 40px;
+}
+.formdiv{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+.formdiv label{
+    margin-right: 10px;
+    font-size: 25px;
+    color: white;
+}
+
+/**/
+/*table*/
+.usertable{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+.table{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #3b5998;
+    color: white;
+    font-size: 25px;
+    border-radius: 10px 0px 0 0;
+}
+.user{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: rgb(59, 89, 152,0.2);
+    color: white;
+    font-size: 18px;
+    width: 100%;
+}
+.userdiv{
+    display: flex;
+    flex-direction: column;
+
+}
+.usernumbersmain{
+
+    flex-direction: row-reverse;
+    display: flex;
+}
+.usernumbers{
+    background-color: #3b5998;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px 10px 0 0;
+    color: white;
+    
+}
+.usermain{
+    display: flex;
+    align-items: center;
+
+}
+.userbutton{
+    position: absolute;
+    width: 80%;
+    font-size: 20px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    
+    
+}
+.userbutton i{
+    cursor: pointer;
+    transition: 0.3s;
+}
+.fa-trash:hover{
+    color: rgb(198, 6, 6);
+}
+.fa-trash{
+    color: rgb(147, 6, 6);
+}
+.fa-pen{
+    color: rgb(53, 52, 52);
+    margin-right: 20px;
+}
+.fa-pen:hover{
+    color: rgb(138, 135, 135);
+
+}
+.user p{
+    width: 150px;
+    text-align: center;
+    z-index: 1;
+}
+.table p{
+    width: 150px;
+    text-align: center;
+    margin: 5px;
+}

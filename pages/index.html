@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebGuide</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="search"><p>Searching:</p><input class="searchinput" type="text" onkeyup="search()"></div>
+    <div class="userreg">
+      <form class="userreg-form">
+        <div class="formdiv">
+          <label>Name: </label>
+          <input class="name" type="text" />
+        </div>
+        <div class="formdiv">
+          <label>Surname: </label>
+          <input class="surname" type="text" />
+        </div>
+        <div class="formdiv">
+          <label>Phone Number: </label>
+          <input class="phone-number" type="number" />
+        </div>
+        <div class="formdiv">
+          <label>E-Mail: </label>
+          <input class="email" type="email" />
+        </div>
+        <div class="buttondiv">
+          <button type="button" class="submit">Save</button>
+        </div>
+      </form>
+    </div>
+    <div class="usertable">
+        <div class="usernumbersmain">
+        <div class="usernumbers">
+            <p>Number Of Registered People : <span class="usernumbersspan">0</span></p>
+        </div>
+    </div>
+      <div class="userdiv">
+        <div class="table">
+          <p>Name</p>
+          <p>Surname</p>
+          <p>Phone Number</p>
+          <p>E-Mail</p>
+        </div>
+       <div class="useruserdiv"></div>
+  
+      </div>
+    </div>
+
+    <script src="/javascript/script.js"></script>
+  </body>
+</html>
