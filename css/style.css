@@ -137,13 +137,13 @@ input:focus{
 }
 .userbutton{
     position: absolute;
-    width: 80%;
+    width: 75%;
     font-size: 20px;
     display: flex;
     justify-content: flex-end;
     flex-direction: row;
     align-items: center;
-    gap: 20px;
+
     
     
 }

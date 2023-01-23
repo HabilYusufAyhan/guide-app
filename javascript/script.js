@@ -13,7 +13,7 @@ var kontrol = 0;
 
 oku();
 submit.onclick = function () {
-  if (kontrol == 0) {
+
     valuename = name2.value;
     valuesurname = surname.value;
     valuephone = phonenumber.value;
@@ -33,7 +33,6 @@ submit.onclick = function () {
      </div>
      <div class="userbutton">
        <i class="icon fa-solid fa-trash"></i>
-       <i class="fa-solid fa-pen"></i>
      </div>
 
      `;
@@ -42,32 +41,8 @@ submit.onclick = function () {
    else{
         window.alert("Lütfen boş alan bırakmayınız");
     }
-  } else if (kontrol == 1) {
-    if (name2.value != '' && surname.value != '' && phonenumber.value != ''&& email.value != '') {
-      
-   
-    tick.parentElement.parentElement.firstElementChild.firstElementChild.textContent =
-      name2.value;
-    tick.parentElement.parentElement.firstElementChild.firstElementChild.nextElementSibling.textContent =
-      surname.value;
-    tick.parentElement.parentElement.firstElementChild.firstElementChild.nextElementSibling.nextElementSibling.textContent =
-      phonenumber.value;
-    tick.parentElement.parentElement.firstElementChild.firstElementChild.nextElementSibling.nextElementSibling.nextElementSibling.textContent =
-      email.value;
-    submit.textContent = "Save";
-    kontrol = 0;
-    name2.value = "";
-    surname.value = "";
-    phonenumber.value = "";
-    email.value = "";
-  }
-  else{
-    window.alert("lütfen boşta input bırakmayın");
-    
-  }
-  }
+  } 
 
-};
 userdiv.addEventListener("click", removeordesign);
 function removeordesign(e) {
   tick = e.target;
@@ -78,24 +53,9 @@ function removeordesign(e) {
       tick.parentElement.parentElement.firstElementChild.firstElementChild
         .nextElementSibling.nextElementSibling.textContent;
     sil(silinenkisiphone);
-  } else if (tick.classList.contains("fa-pen")) {
-   
-    name2.value =
-      tick.parentElement.parentElement.firstElementChild.firstElementChild.textContent;
-    surname.value =
-      tick.parentElement.parentElement.firstElementChild.firstElementChild.nextElementSibling.textContent;
-    phonenumber.value =
-      tick.parentElement.parentElement.firstElementChild.firstElementChild.nextElementSibling.nextElementSibling.textContent;
-    email.value =
-      tick.parentElement.parentElement.firstElementChild.firstElementChild.nextElementSibling.nextElementSibling.nextElementSibling.textContent;
-    submit.textContent = "Update";
-    kontrol = 1;
-  }
+  } 
 }
-function search() {
-  const search = document.querySelector(".searchinput");
-  console.log(search.value);
-}
+
 
 function localstorage() {
   let kisiad;
@@ -153,7 +113,6 @@ function oku() {
      </div>
      <div class="userbutton">
        <i class="icon fa-solid fa-trash"></i>
-       <i class="fa-solid fa-pen"></i>
      </div>
 
      `;
