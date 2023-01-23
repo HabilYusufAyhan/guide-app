@@ -43,6 +43,9 @@ submit.onclick = function () {
         window.alert("Lütfen boş alan bırakmayınız");
     }
   } else if (kontrol == 1) {
+    if (name2.value != '' && surname.value != '' && phonenumber.value != ''&& email.value != '') {
+      
+   
     tick.parentElement.parentElement.firstElementChild.firstElementChild.textContent =
       name2.value;
     tick.parentElement.parentElement.firstElementChild.firstElementChild.nextElementSibling.textContent =
@@ -53,11 +56,17 @@ submit.onclick = function () {
       email.value;
     submit.textContent = "Save";
     kontrol = 0;
+    name2.value = "";
+    surname.value = "";
+    phonenumber.value = "";
+    email.value = "";
   }
-  name2.value = "";
-  surname.value = "";
-  phonenumber.value = "";
-  email.value = "";
+  else{
+    window.alert("lütfen boşta input bırakmayın");
+    
+  }
+  }
+
 };
 userdiv.addEventListener("click", removeordesign);
 function removeordesign(e) {
@@ -70,6 +79,7 @@ function removeordesign(e) {
         .nextElementSibling.nextElementSibling.textContent;
     sil(silinenkisiphone);
   } else if (tick.classList.contains("fa-pen")) {
+   
     name2.value =
       tick.parentElement.parentElement.firstElementChild.firstElementChild.textContent;
     surname.value =
@@ -180,3 +190,8 @@ function sil(silinenad) {
 
   number.textContent = kisiad.length;
 }
+
+
+
+
+
