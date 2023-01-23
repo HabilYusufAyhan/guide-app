@@ -147,6 +147,14 @@ input:focus{
     
     
 }
+.logo{
+    width: 15vh;
+    cursor: pointer;
+}
+.logoh2{
+    display: flex;
+    align-items: center;
+}
 .userbutton i{
     cursor: pointer;
     transition: 0.3s;
