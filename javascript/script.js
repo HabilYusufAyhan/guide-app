@@ -153,4 +153,18 @@ function sil(silinenad) {
 
 
 
+if (user.energy == 0) {
+  while (user.energy == 100) {
+    drinkcoffee();
+    listentomusic();
+  }
+  
+}
+if (user.energy == 100) {
+  backtowork();
+}
+
+
+
+
 

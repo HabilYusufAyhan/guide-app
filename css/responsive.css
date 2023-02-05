@@ -1,0 +1,10 @@
+@media (min-width: 0px) {
+   .userbutton{
+    width: 86%;
+   }
+}
+@media (min-width: 450px) {
+    .userbutton{
+        width: 78%;
+    }
+}
